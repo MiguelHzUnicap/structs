@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 
-#define qtdLivros 10
-#define tituloLivro 100
-#define nomeAutor 100
-#define nomeEditora 100
+#define QTD_LIVROS 10
+#define TITULO_LIVRO 100
+#define NOME_AUTOR 100
+#define NOME_EDITORA 100
 #define TAM_TEMP 256
 
 struct Livro {
-    char titulo[tituloLivro];
-    char autor[nomeAutor];
-    char editora[nomeEditora];
+    char titulo[TITULO_LIVRO];
+    char autor[NOME_AUTOR];
+    char editora[NOME_EDITORA];
     int anoPublicacao
     int qtdPaginas;
 };
@@ -19,10 +19,10 @@ void lerStr(char *str, int count)
 void lerLivro(struct Livro *livro)
 
 int main(){
-    struct Livro livros[qtdLivros];
-    char titulo[tituloLivro];
-    char autor[nomeAutor];
-    char editora[nomeEditora];
+    struct Livro livros[QTD_LIVROS];
+    char titulo[TITULO_LIVRO];
+    char autor[NOME_AUTOR];
+    char editora[NOME_EDITORA];
     int qtdpaginas, anopublicacao;
 }
 
@@ -49,11 +49,11 @@ void lerStr(char *str, int count) {
   void lerLivro(struct Livro *livro) {
   char tempStr[TAM_TEMP];
   printf("Digite o titulo do livro: ");
-  lerStr(livro->titulo, tituloLivro); 
+  lerStr(livro->titulo, TITULO_LIVRO); 
   printf("Digite o autor(a): ");
-  lerStr(livro->autor, nomeAutor);
+  lerStr(livro->autor, NOME_AUTOR);
   printf("Digite a editora: ");
-  lerStr(livro->editora, nomeEditora); 
+  lerStr(livro->editora, NOME_EDITORA); 
   printf("Digite o ano de publicacao do livro: ");
   scanf("%d", &livro->anoPublicacao);
   printf("Digite a quantidade de paginas no livro: ");
