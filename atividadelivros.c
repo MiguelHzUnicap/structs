@@ -51,9 +51,9 @@ void lerStr(char *str, int count) {
   printf("Digite o titulo do livro: ");
   lerStr(livro->titulo, tituloLivro); 
   printf("Digite o autor(a): ");
-  scanf("%c", &livro->autor);
+  lerStr(livro->autor, nomeAutor);
   printf("Digite a editora: ");
-  scanf("%c", &livro->editora); 
+  lerStr(livro->editora, nomeEditora); 
   printf("Digite o ano de publicacao do livro: ");
   scanf("%d", &livro->anoPublicacao);
   printf("Digite a quantidade de paginas no livro: ");
@@ -62,7 +62,7 @@ void lerStr(char *str, int count) {
 }
 
 void imprimirLivro(struct Livro livro) {
-  printf("(%s, %s, %s, %d, %d)\n",
+  printf("(%s, %s , %s, %d, %d)\n",
     livro.titulo,
     livro.autor,
     livro.editora,
