@@ -101,9 +101,9 @@ void ordenarLivroBubblesort (Struct Livro livro, int n) {
   //int inicio = 0, fim = n - 1, meio;
   //while (inicio <= fim) {
     //meio = (inicio + fim) / 2;
-    //if (strcmp(v[meio].titulo == x) {
+    //if (strcmp(v[meio].titulo, x) == 0) {
       //return meio;
-    //} else if (x < strcmp(v[meio].titulo) {
+    //} else if (strcmp(x, v[meio].titulo) < 0 {
       //fim = meio - 1;
     //} else {
       //inicio = meio + 1;
